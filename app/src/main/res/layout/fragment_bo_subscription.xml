@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get your \ns u b s c r i p t i o n\ntoday"
+        android:textSize="19sp"
+        android:typeface="monospace"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:background="@drawable/edittext_bg"
+        android:backgroundTint="@color/teal_700"
+        android:elevation="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="50dp"
+            android:text="Get a monthly subscription\nAnd post any number of advertisements\nfor the whole month"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get subscription"
+            android:textColor="@color/teal_700"
+            android:backgroundTint="@color/white"
+            android:textSize="17sp"
+            android:padding="15dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/edittext_bg" />
+    </LinearLayout>
+
+</LinearLayout>

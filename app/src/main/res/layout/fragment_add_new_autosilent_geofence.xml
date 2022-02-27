@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintWidth_percent="70"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Up Geofence"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="25dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/silent_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title   (Eg: College)"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/reminder_edittext_bg" />
+
+
+        <EditText
+            android:id="@+id/silent_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:drawableLeft="@drawable/icon_marker"
+            android:drawablePadding="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:background="@drawable/reminder_edittext_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/silent_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Date"
+                android:textSize="15sp"
+                android:layout_weight="50"
+                android:drawableLeft="@drawable/icon_calender"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/reminder_edittext_bg" />
+
+            <EditText
+                android:id="@+id/silent_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="End Date"
+                android:layout_weight="50"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/icon_calender"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:background="@drawable/reminder_edittext_bg" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/silent_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Geofence"
+            android:background="@color/teal_700_transparent"
+            android:textColor="@color/black"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+</RelativeLayout>

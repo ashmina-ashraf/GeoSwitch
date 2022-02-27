@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="125dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/autosilent_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="starts on" />
+
+            <TextView
+                android:id="@+id/autosilent_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:text="MON" />
+
+            <TextView
+                android:id="@+id/autosilent_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700_transparent"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/autosilent_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textAllCaps="true"
+                android:text="JAN" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="125dp"
+            android:background="@color/black"
+            android:layout_marginRight="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:layout_marginBottom="10dp"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/autosilent_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="15sp"
+                    android:layout_weight="99.5"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:text="Task" />
+
+                <ImageView
+                    android:id="@+id/autosilent_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_options"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/autosilent_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:drawableLeft="@drawable/icon_location"
+                android:drawablePadding="5dp"
+                android:layout_marginBottom="7dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/autosilent_enddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_clock"
+                android:drawablePadding="5dp"
+                android:textColor="@color/black"
+                android:text="Ends on:" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="G e o S w i t c h"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="22sp"
+            android:typeface="monospace"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Stay focused on your goals." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="We got your back." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:elevation="20dp"
+        android:background="@drawable/curved_rect"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/reminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/curved_rect"
+                android:backgroundTint="@color/teal_200_transparent"
+                android:src="@drawable/icon_notification" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Reminders" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/auto_silent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/curved_rect"
+                android:backgroundTint="@color/teal_500_transparent"
+                android:src="@drawable/icon_silent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Auto silent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/call_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="25dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/curved_rect"
+                android:backgroundTint="@color/teal_700_transparent"
+                android:src="@drawable/icon_callfilter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text=" Call Filter " />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

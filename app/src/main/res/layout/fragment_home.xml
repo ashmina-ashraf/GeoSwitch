@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_marginTop="20dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/icon_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_menu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/icon_menu"
+            android:background="@drawable/searchbar_bg">
+
+
+            <TextView
+                android:id="@+id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="Search" />
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/icon_search" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/you_are_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:text="Y o u   a r e   h e r e"
+        android:typeface="monospace"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/icon_user_location"
+        android:drawablePadding="15dp" />
+
+    <TextView
+        android:id="@+id/user_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:text="Perumbavoor"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:layout_marginBottom="25dp"
+        android:drawablePadding="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/place_cat_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="25dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/offers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:text="Offers Near You"
+        android:typeface="monospace"
+        android:textAllCaps="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:elevation="10dp"
+        android:drawableStart="@drawable/icon_offer"
+        android:drawablePadding="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_ad_view"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
